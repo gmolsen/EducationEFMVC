@@ -49,7 +49,7 @@ namespace EducationEFMVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,SAT,GPA")] Student student)
+        public ActionResult Create([Bind(Include = "Id,FirstName,LastName,SAT,GPA,Phone,Email")] Student student)
         {
             if (ModelState.IsValid)
             {
@@ -82,7 +82,7 @@ namespace EducationEFMVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,SAT,GPA")] Student student)
+        public ActionResult Edit([Bind(Include = "Id,FirstName,LastName,SAT,GPA,Phone,Email")] Student student)
         {
             if (ModelState.IsValid)
             {
